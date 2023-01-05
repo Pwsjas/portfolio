@@ -1,4 +1,74 @@
-p {
-    background: linear-gradient(to bottom right, transparent 70%, green 0),
-    linear-gradient(to top left, transparent 70%, rgb(47, 0, 255) 0, yellow);
+.main-panel {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    width: calc(100% - 64px);
+    height: calc(100% - 64px);
+
+    .border-top-left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 512px;
+        height: 512px;
+        background: 
+        linear-gradient(to top left,
+        transparent 80%,
+        rgba(0,172,173,1) 80%,
+        rgba(0,91,168,1) 90%,
+        rgba(0,255,239,1) 100%);
+
+        border-top-left-radius: 16px;
+    }
+
+    .border-bottom-right {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 512px;
+        height: 512px;
+        background: 
+        linear-gradient(to bottom right,
+        transparent 80%,
+        rgba(0,172,173,1) 80%,
+        rgba(0,91,168,1) 90%,
+        rgba(0,255,239,1) 100%);
+
+        border-bottom-right-radius: 16px;
+    }
+
+    .content {
+        width: calc(100% - 42px);
+        height: calc(100% - 42px);
+        z-index: 1;
+    }
+
+    .logo {
+        position: absolute;
+        top: 42px;
+        left: 42px;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .socials {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        width: 20%;
+        max-width: 512px;
+        height: 10%;
+        max-height: 64px;
+        top: 42px;
+        right: 42px;
+        gap: 32px;
+
+        .email, .github, .resume {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
 }
