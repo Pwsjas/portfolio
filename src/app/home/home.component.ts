@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faFile, faP, faW, faS } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 
@@ -12,6 +12,9 @@ export class HomeComponent implements OnInit {
   faEnvelope = faEnvelope;
   faGithub = faGithub;
   faFile = faFile;
+  faP = faP;
+  faW = faW;
+  faS = faS;
 
   constructor() { }
 
