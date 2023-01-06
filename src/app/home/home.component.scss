@@ -5,7 +5,9 @@
     align-items: center;
 
     width: calc(100% - 64px);
+    max-width: 1280px;
     height: calc(100% - 64px);
+    max-height: 720px;
 
     .border-top-left {
         position: absolute;
@@ -43,36 +45,43 @@
         width: calc(100% - 42px);
         height: calc(100% - 42px);
         z-index: 1;
-    }
 
-    .logo {
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        top: 42px;
-        left: 42px;
-        width: fit-content;
-        height: fit-content;
-    }
-
-    .socials {
-        position: absolute;
-        display: flex;
-        flex-direction: row;
-        justify-content: right;
-        width: 20%;
-        max-width: 512px;
-        height: 10%;
-        max-height: 64px;
-        top: 42px;
-        right: 42px;
-        gap: 32px;
-
-        .email, .github, .resume {
+        app-main-content {
             display: flex;
             flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            top: 42px;
+            left: 42px;
             width: fit-content;
-            gap: 16px;
+            height: fit-content;
+        }
+    
+        .socials {
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            width: 20%;
+            max-width: 512px;
+            height: 10%;
+            max-height: 64px;
+            top: 42px;
+            right: 42px;
+            gap: 32px;
+    
+            .email, .github, .resume {
+                display: flex;
+                flex-direction: row;
+                width: fit-content;
+                gap: 16px;
+            }
         }
     }
 }

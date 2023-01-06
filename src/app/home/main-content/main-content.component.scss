@@ -1,0 +1,14 @@
+.wrapper {
+    width: 80%;
+    height: 80%;
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+    }
+
+    .projects {
+        width: 25%;
+    }
+}
