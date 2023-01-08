@@ -18,9 +18,7 @@
         background: 
         linear-gradient(to top left,
         transparent 80%,
-        rgba(163,163,163,1) 80%,
-        rgba(93,93,93,1) 90%,
-        rgba(163,163,163,1) 100%);
+        #3ad59f 0%, #f8ff00 100%);
 
         border-top-left-radius: 16px;
     }
@@ -34,9 +32,8 @@
         background: 
         linear-gradient(to bottom right,
         transparent 80%,
-        rgba(163,163,163,1) 80%,
-        rgba(93,93,93,1) 90%,
-        rgba(163,163,163,1) 100%);
+        #f8ff00 0%,
+        #3ad59f 100%);
 
         border-bottom-right-radius: 16px;
     }
@@ -70,7 +67,7 @@
             justify-content: right;
             width: 20%;
             max-width: 512px;
-            height: 10%;
+            height: fit-content;
             max-height: 64px;
             top: 42px;
             right: 42px;

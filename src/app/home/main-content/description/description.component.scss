@@ -4,4 +4,25 @@
     justify-content: center;
     align-items: center;
     text-align: left;
+
+    .images {
+
+        img {
+            margin: 8px;
+            width: 208px;
+            height: 117px;
+        }
+    }
+}
+
+.underline {
+    padding-left: 2px;
+    background: 
+    linear-gradient(to top left,
+    #3ad59f 0%, #f8ff00 100%);
+    width: fit-content;
+
+    p {
+        padding-left: 16px;
+    }
 }
