@@ -1,0 +1,20 @@
+.panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(51, 51, 51);
+    border-radius: 16px;
+
+    p, fa-icon {
+        width: fit-content;
+        height: fit-content;
+        background-color: rgb(51, 51, 51);
+        margin: 8px;
+    }
+
+    * {
+        background-color: rgb(51, 51, 51);
+    }
+}

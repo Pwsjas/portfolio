@@ -1,11 +1,17 @@
 .wrapper {
     width: 80%;
     height: 80%;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     .content {
         display: flex;
         flex-direction: column;
-        width: 75%;
+        width: fit-content;
+        max-width: 75%;
+        height: fit-content; 
+        gap: 32px;
     }
 
     .projects {
