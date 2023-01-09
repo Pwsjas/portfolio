@@ -1,11 +1,4 @@
 <h1>Skills</h1>
 <div class="container">
-    <app-skill-panel [skill]="skill"></app-skill-panel>
-    <app-skill-panel [skill]="skill"></app-skill-panel>
-    <app-skill-panel [skill]="skill"></app-skill-panel>
-    <app-skill-panel [skill]="skill"></app-skill-panel>
-    <app-skill-panel [skill]="skill"></app-skill-panel>
-    <app-skill-panel [skill]="skill"></app-skill-panel>
-    <app-skill-panel [skill]="skill"></app-skill-panel>
-    <app-skill-panel [skill]="skill"></app-skill-panel>
+    <app-skill-panel *ngFor="let skill of skills" [skill]="skill"></app-skill-panel>
 </div>

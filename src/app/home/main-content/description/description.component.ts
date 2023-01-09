@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DescriptionComponent implements OnInit {
 
+  project: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {

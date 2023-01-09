@@ -2,8 +2,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: left;
+    height: fit-content;
+
+    h1 {
+        padding: 16px;
+    }
+
+    h1, p {
+        height: fit-content;
+    }
 
     .images {
 

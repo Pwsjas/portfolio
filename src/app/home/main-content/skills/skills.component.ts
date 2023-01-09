@@ -7,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
-  skill: string = 'Javascript';
+  skills: string[] = [];
 
   constructor() { }
 
   ngOnInit(): void {
+    this.skills = ['Javascript', 'Typescript', 'Angular', 'React', 'CSharp', 'Java', 'Ruby', 'PostgreSQL', 'HTML', 'CSS', 'NodeJS', 'Express', 'AWS', 'SASS', 'RubyOnRails', 'jQuery', 'Mocha', 'Jest', 'Cypress', 'Storybook'];
   }
-
 }

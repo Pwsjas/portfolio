@@ -2,23 +2,41 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 32px;
     width: fit-content;
-    height: fit-content;
+    height: 100%;
 
-    .underline {
-        padding-bottom: 1px;
-        background: 
-        linear-gradient(to top left,
-        #3ad59f 0%, #f8ff00 100%);
-        width: fit-content;
+    h1 {
+        height: fit-content;
+    }
 
-        .project {
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 32px;
+        width: 100%;
+
+        .underline {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: right;
+            justify-content: right;
+            padding-bottom: 1px;
+            background: 
+            linear-gradient(to top left,
+            #3ad59f 0%, #f8ff00 100%);
+            width: 100%;
+            height: fit-content;
+            
+    
+            .project {
+                display: flex;
+                flex-direction: column;
+                justify-content: right;
+                text-align: right;
+    
+                cursor:pointer;
+            }
         }
     }
+
 }

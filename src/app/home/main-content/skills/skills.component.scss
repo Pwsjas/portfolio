@@ -4,13 +4,17 @@
     justify-content: left;
     align-items: center;
     flex-wrap: wrap;
-    border-radius: 16px;
     width: fit-content;
+    height: fit-content;
+    gap: 16px;
 
     app-skill-panel {
-        border-radius: 16px;
         width: fit-content;
         height: 32px;
-        margin: 8px;
     }
+}
+
+h1 {
+    padding: 16px;
+    height: fit-content;
 }

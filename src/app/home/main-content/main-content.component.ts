@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainContentComponent implements OnInit {
 
+  projectImages: any = {
+    tinyTactics: ["https://raw.githubusercontent.com/Pwsjas/tactics/main/server/public/images/img2.png","https://raw.githubusercontent.com/Pwsjas/tactics/main/server/public/images/img1.png", "https://raw.githubusercontent.com/Pwsjas/tactics/main/server/public/images/img3.png"],
+    wowTracker: [],
+    resourceWall: []
+  };
+
   constructor() { }
 
   ngOnInit(): void {

@@ -11,8 +11,13 @@
         flex-direction: column;
         width: fit-content;
         max-width: 75%;
-        height: fit-content; 
+        height: 90%; 
+        max-height: 90%;
         gap: 32px;
+
+        app-description {
+            height: fit-content;
+        }
     }
 
     .projects {
@@ -20,7 +25,7 @@
         flex-direction: column;
         width: fit-content;
         max-width: 25%;
-        max-height: 50%;
+        max-height: 90%;
         gap: 32px;
     }
 }

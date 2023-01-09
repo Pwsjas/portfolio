@@ -1,23 +1,30 @@
-.panel {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
+.underline {
+    padding-bottom: 1px;
     background: 
     linear-gradient(to top left,
     #3ad59f 0%, #f8ff00 100%);
-    border-radius: 16px;
+    width: fit-content;
+    padding: 2px;
 
-    p, fa-icon {
-        width: fit-content;
-        height: fit-content;
-        background:transparent;
-        margin: 8px;
-        color: black;
+    .panel {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+        p {
+            width: fit-content;
+            height: fit-content;
+            background:transparent;
+            margin: 8px;
+        }
+    
+        * {
+            background: transparent;
+        }
     }
+}
 
-    * {
-        background: transparent;
-    }
+.filter {
+    filter: invert(84%) sepia(6%) saturate(11%) hue-rotate(4deg) brightness(89%) contrast(89%);
 }
