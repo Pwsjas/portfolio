@@ -2,19 +2,33 @@
     <h1>Projects</h1>
 
     <div class="projects-container">
-        <div class="underline">
-            <div class="project" id="tiny-tactics">
-                <p>Tiny Tactics</p>
+        <div class="underline-container">
+            <div class="underline">
+                <div (click)="selectProject(tinyTactics)" class="project" id="tiny-tactics">
+                    <p>Tiny Tactics</p>
+                </div>
             </div>
         </div>
-        <div class="underline">
-            <div class="project" id="wow-tracker">
-                <p>WoW Tracker</p>
+        <div class="underline-container">
+            <div class="underline">
+                <div (click)="selectProject(wowTracker)" class="project" id="wow-tracker">
+                    <p>WoW Tracker</p>
+                </div>
             </div>
         </div>
+        <div class="underline-container">
+            <div class="underline">
+                <div (click)="selectProject(resourceWall)" class="project" id="Resource Wall">
+                    <p>Resource Wall</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="underline-container">
         <div class="underline">
-            <div class="project" id="Resource Wall">
-                <p>Resource Wall</p>
+            <div (click)="selectProject(welcome)" class="project" id="Resource Wall">
+                <p>Home</p>
             </div>
         </div>
     </div>
