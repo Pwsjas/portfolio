@@ -1,9 +1,9 @@
 <div class="wrapper">
     <div class="content">
-        <app-description [title]="projectData[selectedProject].title" [description]="projectData[selectedProject].description" [images]="projectData[selectedProject].images"></app-description>
+        <app-description [title]="projectData[selectedProject].title" [description]="projectData[selectedProject].description" [images]="projectData[selectedProject].images" [links]="projectData[selectedProject].links"></app-description>
         <app-skills [skills]="projectData[selectedProject].skills"></app-skills>
     </div>
     <div class="projects">
-        <app-projects (selectedProject)="updateSelectedProject($event)"></app-projects>
+        <app-projects [projects]="projects" (selectedProject)="updateSelectedProject($event)"></app-projects>
     </div>
 </div>

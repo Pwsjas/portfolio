@@ -5,9 +5,16 @@
         <p>{{description}}</p>
     </div>
 
-    <div *ngIf="images" class="images">
-        <img src="{{images[0]}}">
-        <img src="{{images[1]}}">
-        <img src="{{images[2]}}">
+    <div *ngIf="links" class="links">
+        <a *ngIf="links[0]">Github</a>
+        <a *ngIf="links[1]">Website!</a>
     </div>
+
+    <div *ngIf="images" class="images">
+        <img *ngIf=images[0] (click)="viewImage(images[0])" src="{{images[0]}}">
+        <img *ngIf=images[1] (click)="viewImage(images[1])" src="{{images[1]}}">
+        <img *ngIf=images[2] (click)="viewImage(images[2])" src="{{images[2]}}">
+    </div>
+
+    <app-image-popup (closeImage)="closeImage()" [image]="selectedImage" *ngIf="selectedImage"></app-image-popup>
 </div>

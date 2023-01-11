@@ -30,7 +30,7 @@
             padding-bottom: 1px;
             background: 
             linear-gradient(to top left,
-            #3ad59f 0%, #f8ff00 100%);
+            #A2EC48 0%, #A2EC48 100%);
             width:  fit-content;
             height: fit-content;
             
@@ -42,8 +42,16 @@
                 text-align: right;
     
                 cursor:pointer;
+
+                p:hover {
+                    color: #A2EC48;
+                }
             }
         }
     }
 
+}
+
+.selected {
+    color: #A2EC48;
 }

@@ -4,6 +4,7 @@
     justify-content: center;
     text-align: left;
     height: fit-content;
+    gap: 16px;
 
     h1 {
         padding: 16px;
@@ -14,11 +15,34 @@
     }
 
     .images {
+        display: flex;
+        align-items: center;
 
         img {
+            cursor: pointer;
             margin: 8px;
-            width: 208px;
-            height: 117px;
+            width: 30%;
+        }
+
+        img:hover {
+            box-shadow: 0 0 0 2px #A2EC48;
+        }
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        width: fit-content;
+        gap: 32px;
+        margin-left: 16px;
+
+        a {
+            color: #A2EC48;
+        }
+
+        a:hover {
+            cursor: pointer;
         }
     }
 }
@@ -27,7 +51,7 @@
     padding-left: 2px;
     background: 
     linear-gradient(to top left,
-    #3ad59f 0%, #f8ff00 100%);
+    #A2EC48 0%, #A2EC48 100%);
     width: fit-content;
 
     p {

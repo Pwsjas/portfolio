@@ -12,6 +12,7 @@ import { SkillPanelComponent } from './home/main-content/skill-panel/skill-panel
 
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faAngular } from '@fortawesome/free-brands-svg-icons';
+import { ImagePopupComponent } from './home/main-content/image-popup/image-popup.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { faAngular } from '@fortawesome/free-brands-svg-icons';
     ProjectsComponent,
     SkillsComponent,
     DescriptionComponent,
-    SkillPanelComponent
+    SkillPanelComponent,
+    ImagePopupComponent
   ],
   imports: [
     BrowserModule,
