@@ -6,8 +6,8 @@
     </div>
 
     <div *ngIf="links" class="links">
-        <a *ngIf="links[0]">Github</a>
-        <a *ngIf="links[1]">Website!</a>
+        <a href="{{links[0]}}" target="_blank" rel="noopener noreferrer" *ngIf="links[0]">Github</a>
+        <a href="{{links[1]}}" target="_blank" rel="noopener noreferrer" *ngIf="links[1]">Website!</a>
     </div>
 
     <div *ngIf="images" class="images">
