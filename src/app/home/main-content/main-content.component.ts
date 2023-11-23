@@ -15,6 +15,14 @@ export class MainContentComponent implements OnInit {
       description: "My name is Philip Simpson, I've been interested in Web Development and Video Game Development my entire life, and have been focused on turning that interest into a career for the last few years.  This website serves as a collection of the web-based projects I'm most proud of (although certain private projects made in collaboration with others may be missing).  Thank you for checking out my website! All projects have github and / or website links, and my email / github can be found at the top-right of the UI.  Feel free to contact me for any inquiries, work or otherwise. Have a great day!",
       skills: ['Javascript', 'Typescript', 'Angular', 'React', 'CSharp', 'Java', 'Ruby', 'PostgreSQL', 'HTML', 'CSS', 'NodeJS', 'Express', 'AWS', 'SASS', 'RubyOnRails', 'jQuery', 'Mocha', 'Jest', 'Cypress', 'Storybook']
     },
+    cloudscapeChronicles: {
+      id: 'cloudscapeChronicles',
+      title: "Cloudscape Chronicles",
+      description: "Cloudscape Chronicles is a website designed to advertise, fascilitate sales, and distribute information for the video game I have been developing in my spare time.  It was built using NextJS (React), was launched using AWS, and is supported on the back end by AWS SQL, and AWS SMS",
+      images: ["https://raw.githubusercontent.com/Pwsjas/tactics/main/server/public/images/img2.png","https://raw.githubusercontent.com/Pwsjas/tactics/main/server/public/images/img1.png", "https://raw.githubusercontent.com/Pwsjas/tactics/main/server/public/images/img3.png"],
+      skills: ['Javascript', 'Phaser', 'NodeJS', 'Express', 'jQuery', 'CSS', 'HTML'],
+      links: ['https://github.com/Pwsjas/tactics']
+    },
     tinyTactics: {
       id: 'tinyTactics',
       title: "Tiny Tactics",
@@ -51,6 +59,7 @@ export class MainContentComponent implements OnInit {
 
   projects: any = [
     this.projectData.tinyTactics,
+    this.projectData.cloudscapeChronicles,
     this.projectData.wowTracker,
     this.projectData.resourceWall,
     this.projectData.scheduler,
