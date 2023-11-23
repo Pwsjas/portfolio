@@ -19,7 +19,7 @@ export class MainContentComponent implements OnInit {
       id: 'cloudscapeChronicles',
       title: "Cloudscape Chronicles",
       description: "Cloudscape Chronicles is a website designed to advertise, fascilitate sales, and distribute information for the video game I have been developing in my spare time.  It was built using NextJS (React), was launched using AWS, and is supported on the back end by AWS SQL, and AWS SMS",
-      images: ["https://raw.githubusercontent.com/Pwsjas/tactics/main/server/public/images/img2.png","https://raw.githubusercontent.com/Pwsjas/tactics/main/server/public/images/img1.png", "https://raw.githubusercontent.com/Pwsjas/tactics/main/server/public/images/img3.png"],
+      images: ["https://github.com/Pwsjas/portfolio/blob/main/docs/main.png?raw=true","https://github.com/Pwsjas/portfolio/blob/main/docs/mechs.png?raw=true", "https://github.com/Pwsjas/portfolio/blob/main/docs/mail.png?raw=true"],
       skills: ['Typescript', 'React', 'AWS', 'NodeJS', 'PostgreSQL', 'SASS', 'HTML'],
       links: ['https://github.com/Pwsjas/gamesite', 'https://www.cloudscapechronicles.com']
     },
