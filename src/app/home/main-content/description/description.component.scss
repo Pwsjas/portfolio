@@ -16,12 +16,16 @@
 
     .images {
         display: flex;
+        justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
 
         img {
             cursor: pointer;
             margin: 8px;
             width: 30%;
+            min-width: 320px;
+            min-height: 180px;
         }
 
         img:hover {
