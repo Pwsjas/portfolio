@@ -8,6 +8,7 @@
     overflow-y: scroll;
     overflow-x: hidden;
 
+
     .content {
         display: flex;
         flex-direction: column;
@@ -45,3 +46,8 @@
   ::-webkit-scrollbar-thumb {
     background: #A2EC48;
   }
+
+  ::-webkit-scrollbar-track {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
