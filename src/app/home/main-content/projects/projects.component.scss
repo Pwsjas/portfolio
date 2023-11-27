@@ -55,3 +55,27 @@
 .selected {
     color: #A2EC48;
 }
+
+@media only screen and (max-width: 900px) {
+    .container {
+        h1 {
+            margin-left: 16px;
+            text-align: left;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .underline-container {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            height: fit-content;
+            width: fit-content;
+        }
+
+        .projects-container {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+}

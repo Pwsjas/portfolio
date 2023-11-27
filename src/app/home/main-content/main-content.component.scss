@@ -1,6 +1,4 @@
 .wrapper {
-    width: 80%;
-    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,4 +48,46 @@
   ::-webkit-scrollbar-track {
     margin-top: 16px;
     margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 900px) {
+    .wrapper {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 120px;
+        width: 96%;
+        gap: 0px;
+
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            max-width: 90%;
+            height: fit-content;
+            overflow-y: auto;
+            overflow-x: hidden;
+            gap: 32px;
+        }
+    
+        .projects {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            max-width: 90%;
+            height: fit-content;
+            overflow-y: visible;
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+    }
+}
+
+@media only screen and (min-width: 901px) {
+    .wrapper {
+        width: 80%;
+        height: 80%;
+    }
 }
