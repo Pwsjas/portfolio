@@ -22,3 +22,14 @@
         color: #A2EC48;
     }
 }
+
+@media only screen and (max-width: 900px) {
+    * {
+      html {
+        body {
+            width: 95%;
+            height: 95%;
+        }
+      }
+    }
+  }

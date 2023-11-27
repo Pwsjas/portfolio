@@ -90,3 +90,44 @@
         }
     }
 }
+
+@media only screen and (max-width: 900px) {
+    .main-panel {
+        width: calc(100% - 16px);
+        height: calc(100% - 16px);
+        .border-top-left {
+            visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0px;
+            height: 0px;
+            background: 
+            linear-gradient(to top left,
+            transparent 80%,
+            #A2EC48 0%, #A2EC48 100%);
+    
+            border-top-left-radius: 0px;
+        }
+    
+        .border-bottom-right {
+            visibility: hidden;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 0px;
+            height: 0px;
+            background: 
+            linear-gradient(to bottom right,
+            transparent 80%,
+            #A2EC48 0%,
+            #A2EC48 100%);
+    
+            border-bottom-right-radius: 0px;
+        }
+    }
+    .content {
+        width: calc(100% - 16px);
+        height: calc(100% - 16px);
+    }
+  }
