@@ -13,8 +13,8 @@
         align-items: center;
         
         body {
-            width: 95%;
-            height: 95%;
+          min-width: 100%;
+          min-height: 100%;
         }
     }
 
@@ -33,3 +33,5 @@
       }
     }
   }
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,10 +10,14 @@ import { ProjectsComponent } from './home/main-content/projects/projects.compone
 import { SkillsComponent } from './home/main-content/skills/skills.component';
 import { DescriptionComponent } from './home/main-content/description/description.component';
 import { SkillPanelComponent } from './home/main-content/skill-panel/skill-panel.component';
+import { WelcomeComponent } from './sliders/welcome/welcome.component';
 
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faAngular } from '@fortawesome/free-brands-svg-icons';
 import { ImagePopupComponent } from './home/main-content/image-popup/image-popup.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { IntroductionComponent } from './sliders/introduction/introduction.component';
+import { LinksComponent } from './sliders/links/links.component';
 
 
 @NgModule({
@@ -24,12 +29,17 @@ import { ImagePopupComponent } from './home/main-content/image-popup/image-popup
     SkillsComponent,
     DescriptionComponent,
     SkillPanelComponent,
-    ImagePopupComponent
+    ImagePopupComponent,
+    WelcomeComponent,
+    IntroductionComponent,
+    LinksComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgbModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

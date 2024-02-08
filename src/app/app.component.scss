@@ -1,11 +1,47 @@
-app-home{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
 #page-wrapper{
     display:flex;
     justify-content: center;
     align-items: center;
+
+    background-color: purple;
+
+    router-outlet {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 32px;
+
+        app-home{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        app-welcome {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+    
+            width: fit-content;
+            height: fit-content;
+        }
+        app-links { 
+            display:flex;
+            justify-content: center;
+            align-items: center;
+    
+            width: fit-content;
+            height: fit-content;
+        }  
+
+        app-introduction {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+    
+            width: fit-content;
+            height: fit-content;
+        }
+    } 
 }

@@ -1,7 +1,7 @@
 .container {
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     width: fit-content;
@@ -15,7 +15,7 @@
     }
 }
 
-h1 {
-    padding: 16px;
+h2 {
     height: fit-content;
+    text-align: center;
 }

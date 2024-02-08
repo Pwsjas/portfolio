@@ -1,0 +1,18 @@
+.welcome-buttons {
+        height: fit-content;
+        width: fit-content;
+    button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        border: 2px solid white;
+        border-radius: 10px;
+
+        height: fit-content;
+        width: 160px;
+        padding: 4px;
+        font-size: 1.5rem;
+    }
+}
