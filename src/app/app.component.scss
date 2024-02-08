@@ -3,8 +3,6 @@
     justify-content: center;
     align-items: center;
 
-    background-color: purple;
-
     router-outlet {
         display:flex;
         flex-direction: column;
@@ -12,6 +10,28 @@
         align-items: center;
 
         gap: 32px;
+        overflow: hidden;
+
+        .card-back {
+            width: fit-content;
+            height: fit-content;
+            padding: 12px;
+            border: 4px solid rgb(185, 185, 185);
+
+            app-introduction {
+                display:flex;
+                justify-content: center;
+                align-items: center;
+        
+                width: fit-content;
+                height: fit-content;
+            }
+    
+            app-skills {
+                width: fit-content;
+                height: fit-content;
+            }
+        }
 
         app-home{
             display:flex;
@@ -34,14 +54,5 @@
             width: fit-content;
             height: fit-content;
         }  
-
-        app-introduction {
-            display:flex;
-            justify-content: center;
-            align-items: center;
-    
-            width: fit-content;
-            height: fit-content;
-        }
     } 
 }
