@@ -1,18 +1,30 @@
 .welcome-buttons {
         height: fit-content;
         width: fit-content;
+        
     button {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
 
-        border: 2px solid white;
+        border: 2px solid #ced9ec;
         border-radius: 10px;
 
         height: fit-content;
         width: 160px;
         padding: 4px;
         font-size: 1.5rem;
+
+        box-shadow: 0px 5px 8px rgb(0, 0, 0);
+        background-color: #34419d;
+    }
+
+    button:hover {
+        transform: scale(1.1);
+
+        * {
+            filter: drop-shadow(0 0 0.1rem red);
+        }
     }
 }

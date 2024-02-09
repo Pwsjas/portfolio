@@ -1,11 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+$main-color: #ced9ec;
+$secondary-color: #66b0c7;
+$tertiary-color: #34419d;
+
 * {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(32, 32, 32);
-    color: rgb(185, 185, 185);
+    background-color: $secondary-color;
+    color: $main-color;
 
     html {
         display: flex;

@@ -64,12 +64,10 @@ export class AppComponent {
   };
 
   ngAfterViewInit() {
-    setTimeout( () => {
-      this.welcomeVisible = true;
-      this.introVisible = true;
-      this.skillsVisible = true;
-      this.linksVisible = true;
-    });
+    this.welcomeVisible = true;
+    this.introVisible = true;
+    this.skillsVisible = true;
+    this.linksVisible = true;
   }
 
   title = 'portfolio';

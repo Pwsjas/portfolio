@@ -2,12 +2,15 @@
     padding-bottom: 1px;
     width: fit-content;
     padding: 2px;
+    background-color: #34419d;
 
     .panel {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+
+        background-color: #34419d;
     
         p {
             width: fit-content;
@@ -22,6 +25,15 @@
     }
 }
 
+.underline:hover {
+    cursor:pointer;
+    transform: scale(1.25);
+    
+    p, img {
+        filter: drop-shadow(0 0 0.1rem white);
+    }
+}
+
 .filter {
-    filter: invert(83%) sepia(0%) saturate(993%) hue-rotate(188deg) brightness(95%) contrast(79%);
+    filter: invert(82%) sepia(22%) saturate(190%) hue-rotate(182deg) brightness(106%) contrast(85%);
 }
