@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
 
@@ -47,6 +47,8 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 })
 
 export class AppComponent {
+  @ViewChild('main') mainPageReference!: ElementRef;
+
   welcomeVisible: boolean = false;
   introVisible: boolean = false;
   skillsVisible: boolean = false;
@@ -68,6 +70,10 @@ export class AppComponent {
     this.introVisible = true;
     this.skillsVisible = true;
     this.linksVisible = true;
+    
+    setTimeout(() => {
+      this.mainPageReference.nativeElement.style.overflow = "visible";
+    }, 1000);
   }
 
   title = 'portfolio';

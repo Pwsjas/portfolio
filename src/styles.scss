@@ -39,3 +39,18 @@ $tertiary-color: #34419d;
   }
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $secondary-color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $tertiary-color;
+}
