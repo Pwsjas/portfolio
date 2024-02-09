@@ -72,7 +72,7 @@ export class AppComponent {
     this.linksVisible = true;
     
     setTimeout(() => {
-      this.mainPageReference.nativeElement.style.overflow = "visible";
+      this.mainPageReference.nativeElement.style.overflow = "auto";
     }, 1000);
   }
 
