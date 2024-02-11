@@ -8,5 +8,9 @@
       <app-skills [skills]="projectData[selectedProject].skills"></app-skills>
     </div>
     <app-links *ngIf="linksVisible" [@slideInBottom]></app-links>
+
+    <app-project></app-project>
+
+    <app-socials></app-socials>
   </router-outlet>
 </div>

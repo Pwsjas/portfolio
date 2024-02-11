@@ -18,6 +18,8 @@ import { ImagePopupComponent } from './home/main-content/image-popup/image-popup
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { IntroductionComponent } from './sliders/introduction/introduction.component';
 import { LinksComponent } from './sliders/links/links.component';
+import { SocialsComponent } from './static/socials/socials.component';
+import { ProjectComponent } from './sliders/project/project.component';
 
 
 @NgModule({
@@ -33,6 +35,8 @@ import { LinksComponent } from './sliders/links/links.component';
     WelcomeComponent,
     IntroductionComponent,
     LinksComponent,
+    SocialsComponent,
+    ProjectComponent,
   ],
   imports: [
     BrowserModule,

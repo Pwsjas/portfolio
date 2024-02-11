@@ -1,0 +1,22 @@
+<section class="project-card">
+    <img src="/assets/images/project-images/cc1.png">
+
+    <div>
+        <h2>Cloudscape Chronicles</h2>
+        
+        <p>A website built with NextJS (React) and Typescript, and deployed using AWS.  Providing users a glimpse into the world of Cloudscape Chronicles, a video game being developed by myself, using Godot Engine and C#.  The website itself provides users with information regarding the game's mechanics, visuals, and music, as well as the ability to sign up for a mailing list to stay up to date with any new developments. </p>
+        
+        <app-skills [skills]="projectData.cloudscape.skills"></app-skills>
+        
+        <div *ngIf="projectData.cloudscape.links" class="links">
+            <section>
+                <a href="{{projectData.cloudscape.links[0]}}" target="_blank" rel="noopener noreferrer" *ngIf="projectData.cloudscape.links[0]">Github</a>
+                <fa-icon class="fa-icon" [icon]="faGithub"></fa-icon>
+            </section>
+            <section>
+                <a href="{{projectData.cloudscape.links[1]}}" target="_blank" rel="noopener noreferrer" *ngIf="projectData.cloudscape.links[1]">Website!</a>
+                <fa-icon class="fa-icon" [icon]="faFile"></fa-icon>
+            </section>
+        </div>
+    </div>
+</section>

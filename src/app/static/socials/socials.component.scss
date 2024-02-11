@@ -1,0 +1,27 @@
+.socials {
+    display: flex;
+    flex-direction: row;
+
+    gap: 32px;
+    transform: scale(1.5);
+
+    a {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        text-decoration: none;
+
+        height: fit-content;
+
+        margin: 0;
+        padding: 0;
+
+        p {
+            text-shadow:0 5px 8px black;
+        }
+    }
+
+    a:hover {
+        transform: scale(1.1);
+    }
+}
