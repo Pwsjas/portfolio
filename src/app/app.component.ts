@@ -53,6 +53,7 @@ export class AppComponent {
   introVisible: boolean = false;
   skillsVisible: boolean = false;
   linksVisible: boolean = false;
+  projectVisible: boolean = false;
 
   selectedProject: string = 'welcome';
 
@@ -70,6 +71,7 @@ export class AppComponent {
     this.introVisible = true;
     this.skillsVisible = true;
     this.linksVisible = true;
+    this.projectVisible = true;
     
     setTimeout(() => {
       this.mainPageReference.nativeElement.style.overflow = "auto";

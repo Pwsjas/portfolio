@@ -6,14 +6,19 @@
     router-outlet {
         display:flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
 
-        gap: 32px;
+        gap: 16px;
         padding: 32px;
         overflow: hidden;
 
         width: 100%;
+        min-height: 100vh;
+
+        #projects-header {
+            margin-top: 32px;
+            text-shadow:0 5px 8px black;
+        }
 
         .card-back {
             width: 80%;

@@ -1,17 +1,39 @@
+@import "../../../styles.scss";
 .welcome-intro {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     
-    max-width: 840px;
+    max-width: 920px;
     height: fit-content;
-
-    gap: 16px;
 
     p {
         margin-left: 4px;
         margin-right: 4px;
+        margin-top: 0px;
+        margin-bottom: 0px;
         text-align: left;
+    }
+
+    section {
+        img {
+            border-radius: 10px;
+            box-shadow: 0px 5px 8px rgb(0, 0, 0);
+        }
+        
+        img:hover {
+            filter: drop-shadow(0 0 0.1rem $main-color);
+            cursor: pointer;
+        }
+    }
+
+    .intro-text {
+        padding: 8px;
+
+        p {
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
     }
 }

@@ -1,9 +1,12 @@
 <div id="page-wrapper">
   <router-outlet #main>
     <app-welcome *ngIf="welcomeVisible" [@slideInTop]></app-welcome>
-    <app-introduction></app-introduction>
 
-    <app-project></app-project>
+    <app-introduction *ngIf="introVisible" [@slideInRight]></app-introduction>
+
+    <h1 id="projects-header">Projects</h1>
+
+    <app-project *ngIf="projectVisible" [@slideInLeft]></app-project>
 
     <app-socials></app-socials>
   </router-outlet>
