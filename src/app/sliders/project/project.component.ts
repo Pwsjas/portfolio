@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { faFile, } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
@@ -8,15 +8,9 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
   styleUrls: ['./project.component.scss']
 })
 export class ProjectComponent {
+  @Input() project: any;
 
   faFile = faFile;
   faGithub = faGithub;
-
-  projectData: any = {
-    cloudscape: {
-      skills: ['Typescript', 'React', 'AWS', 'DynamoDB', 'SCSS', 'NextJS' ],
-      links: ['https://github.com/Pwsjas/gamesite', 'https://www.cloudscapechronicles.com']
-    },
-  };
 
 }

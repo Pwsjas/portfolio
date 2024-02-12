@@ -1,22 +1,22 @@
 <section class="project-card">
-    <img src="/assets/images/project-images/cc1.png">
+    <img src={{project.thumbnail}} width="640" height="360">
 
     <div>
-        <h2>Cloudscape Chronicles</h2>
+        <h2>{{project.title}}</h2>
         
-        <p>A website built with NextJS (React) and Typescript, and deployed using AWS.  Providing users a glimpse into the world of Cloudscape Chronicles, a video game being developed by myself, using Godot Engine and C#.  The website itself provides users with information regarding the game's mechanics, visuals, and music, as well as the ability to sign up for a mailing list to stay up to date with any new developments. </p>
+        <p>{{project.description}}</p>
         
-        <app-skills [skills]="projectData.cloudscape.skills"></app-skills>
+        <app-skills [skills]="project.skills"></app-skills>
         
-        <div *ngIf="projectData.cloudscape.links">
+        <div *ngIf="project.links">
             <section>
-                <a href="{{projectData.cloudscape.links[0]}}" target="_blank" rel="noopener noreferrer" *ngIf="projectData.cloudscape.links[0]">
+                <a href="{{project.links[0]}}" target="_blank" rel="noopener noreferrer" *ngIf="project.links[0]">
                     <p>Github</p>
                     <fa-icon class="fa-icon" [icon]="faGithub"></fa-icon>
                 </a>
             </section>
             <section>
-                <a href="{{projectData.cloudscape.links[1]}}" target="_blank" rel="noopener noreferrer" *ngIf="projectData.cloudscape.links[1]">
+                <a href="{{project.links[1]}}" target="_blank" rel="noopener noreferrer" *ngIf="project.links[1]">
                     <p>Website!</p>
                     <fa-icon class="fa-icon" [icon]="faFile"></fa-icon>
                 </a>

@@ -58,13 +58,18 @@ export class AppComponent {
   selectedProject: string = 'welcome';
 
   projectData: any = {
-    welcome: {
-      skills: ['Javascript', 'Typescript', 'Angular', 'React', 'CSharp', 'Java', 'Ruby', 'PostgreSQL', 'HTML', 'CSS', 'NodeJS', 'Express', 'AWS', 'SASS', 'RubyOnRails', 'jQuery', 'Mocha', 'Jest', 'Cypress', 'Storybook']
-    },
     cloudscape: {
-      skills: ['Typescript', 'React', 'AWS', 'DynamoDB', 'SCSS', 'NextJS' ]
+      thumbnail: "/assets/images/project-images/cc1.png",
+      title: "Cloudscape Chronicles",
+      description: "A full stack website built with NextJS (React) and Typescript, and deployed using AWS.  Providing users a glimpse into the world of Cloudscape Chronicles, a video game being developed by myself, using Godot Engine and C#.  The website itself provides users with information regarding the game's mechanics, visuals, and music, as well as the ability to sign up for a mailing list to stay up to date with any new developments.",
+      skills: ['Typescript', 'React', 'AWS', 'DynamoDB', 'SCSS', 'NextJS' ],
+      links: ['https://github.com/Pwsjas/gamesite', 'https://www.cloudscapechronicles.com']
     },
   };
+
+  projects = [
+    this.projectData.cloudscape,
+  ]
 
   ngAfterViewInit() {
     this.welcomeVisible = true;

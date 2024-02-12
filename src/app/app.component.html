@@ -6,7 +6,7 @@
 
     <h1 id="projects-header">Projects</h1>
 
-    <app-project *ngIf="projectVisible" [@slideInLeft]></app-project>
+    <app-project *ngFor="let project of projects" [project]="project"></app-project>
 
     <app-socials></app-socials>
   </router-outlet>
