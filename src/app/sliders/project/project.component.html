@@ -8,14 +8,18 @@
         
         <app-skills [skills]="projectData.cloudscape.skills"></app-skills>
         
-        <div *ngIf="projectData.cloudscape.links" class="links">
+        <div *ngIf="projectData.cloudscape.links">
             <section>
-                <a href="{{projectData.cloudscape.links[0]}}" target="_blank" rel="noopener noreferrer" *ngIf="projectData.cloudscape.links[0]">Github</a>
-                <fa-icon class="fa-icon" [icon]="faGithub"></fa-icon>
+                <a href="{{projectData.cloudscape.links[0]}}" target="_blank" rel="noopener noreferrer" *ngIf="projectData.cloudscape.links[0]">
+                    <p>Github</p>
+                    <fa-icon class="fa-icon" [icon]="faGithub"></fa-icon>
+                </a>
             </section>
             <section>
-                <a href="{{projectData.cloudscape.links[1]}}" target="_blank" rel="noopener noreferrer" *ngIf="projectData.cloudscape.links[1]">Website!</a>
-                <fa-icon class="fa-icon" [icon]="faFile"></fa-icon>
+                <a href="{{projectData.cloudscape.links[1]}}" target="_blank" rel="noopener noreferrer" *ngIf="projectData.cloudscape.links[1]">
+                    <p>Website!</p>
+                    <fa-icon class="fa-icon" [icon]="faFile"></fa-icon>
+                </a>
             </section>
         </div>
     </div>

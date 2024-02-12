@@ -2,15 +2,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     
+    max-width: 840px;
     height: fit-content;
-    background-color: #34419d;
+
+    gap: 16px;
 
     p {
         margin-left: 4px;
         margin-right: 4px;
-        text-align: center;
-        background-color: #34419d;
+        text-align: left;
     }
 }

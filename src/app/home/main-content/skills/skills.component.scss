@@ -1,14 +1,14 @@
 .container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     width: fit-content;
     height: fit-content;
     gap: 16px;
-    margin-bottom: 32px;
-    background-color: #34419d;
+    margin-bottom: 16px;
+    padding: 0;
 
     app-skill-panel {
         width: fit-content;
@@ -19,6 +19,4 @@
 h2 {
     height: fit-content;
     text-align: center;
-
-    background-color: #34419d;
 }

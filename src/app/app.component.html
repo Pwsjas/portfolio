@@ -1,13 +1,7 @@
 <div id="page-wrapper">
   <router-outlet #main>
     <app-welcome *ngIf="welcomeVisible" [@slideInTop]></app-welcome>
-    <div class="card-back" *ngIf="introVisible" [@slideInLeft]>
-      <app-introduction></app-introduction>
-    </div>
-    <div class="card-back" *ngIf="skillsVisible" [@slideInRight]>
-      <app-skills [skills]="projectData[selectedProject].skills"></app-skills>
-    </div>
-    <app-links *ngIf="linksVisible" [@slideInBottom]></app-links>
+    <app-introduction></app-introduction>
 
     <app-project></app-project>
 
