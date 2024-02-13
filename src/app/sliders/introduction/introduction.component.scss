@@ -7,6 +7,7 @@
     
     max-width: 920px;
     height: fit-content;
+    gap: 32px;
 
     p {
         margin-left: 4px;
@@ -35,5 +36,21 @@
             padding-top: 4px;
             padding-bottom: 4px;
         }
+    }
+}
+
+@media only screen and (max-width: 1220px) {
+    .welcome-intro {
+        flex-direction: column-reverse;
+
+        max-width: 480px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .welcome-intro {
+        flex-direction: column-reverse;
+
+        max-width: 320px;
     }
 }

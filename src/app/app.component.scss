@@ -20,6 +20,14 @@
             text-shadow:0 5px 8px black;
         }
 
+        .project-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            gap: 64px;
+        }
+
         .card-back {
             width: 80%;
             height: fit-content;
@@ -70,6 +78,32 @@
             position: fixed;
             right: 62px;
             top: 16px; 
+
+            background-color: transparent;
         }
     } 
+}
+
+@media only screen and (max-width: 1220px) {
+    #page-wrapper {
+        router-outlet {
+            app-socials {
+                position: fixed;
+                right: 16px;
+                top: 16px; 
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #page-wrapper {
+        router-outlet {
+            app-socials {
+                position: fixed;
+                right: 32px;
+                top: 16px; 
+            }
+        }
+    }
 }

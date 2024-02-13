@@ -31,10 +31,6 @@
 .underline:hover {
     cursor:pointer;
     transform: scale(1.1);
-    
-    p, img {
-        filter: drop-shadow(0 0 0.1rem $tertiary-color);
-    }
 }
 
 .filter {
