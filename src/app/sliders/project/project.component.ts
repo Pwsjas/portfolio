@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { faFile, } from '@fortawesome/free-solid-svg-icons';
+import { faFile, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
@@ -10,7 +10,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 export class ProjectComponent {
   @Input() project: any;
 
-  faFile = faFile;
+  faGlobe = faGlobe;
   faGithub = faGithub;
 
 }

@@ -14,6 +14,7 @@
 
         width: 100%;
         min-height: 100vh;
+        max-width: 100vw;
 
         #projects-header {
             margin-top: 32px;
@@ -99,6 +100,7 @@
 @media only screen and (max-width: 480px) {
     #page-wrapper {
         router-outlet {
+            padding: 8px;
             app-socials {
                 position: fixed;
                 right: 32px;

@@ -85,6 +85,12 @@ export class AppComponent {
       skills: ['Javascript', 'PostgreSQL', 'NodeJS', 'Express', 'jQuery', 'SASS', 'HTML'],
       links: ['https://github.com/wescorner/LHL-midterm-resource-wall']
     },
+    movies: {
+      thumbnail: "/assets/images/project-images/m1.png",
+      title: "Movie Info",
+      description: "Movie Info allows users to search and discover movies of any genre, find out which streaming services offer access to each movie, view trailers and other related videos to each movie, as well as add movies to their own personal watch list when logged in via their unique email and password.  Information on movies is obtained using The Movie Database's API. The website was created using React, and has not currently been deployed.",
+      skills: ["React", "Javascript","PostgreSQL", "Express",],
+    },
     scheduler: {
       thumbnail: "https://raw.githubusercontent.com/Pwsjas/scheduler/master/docs/Blank.png",
       title: "Scheduler",
@@ -98,6 +104,7 @@ export class AppComponent {
     this.projectData.cloudscape,
     this.projectData.wowTracker,
     this.projectData.scheduler,
+    this.projectData.movies,
     this.projectData.tinyTactics,
   ]
 
